@@ -89,7 +89,7 @@ function createList(source, outlineList) {
                         //calculate the difference between the current and previous level
                         var levelUp = prevLevel - headLevel;
                         //go up to a higher level
-                        for (let i = 1; i <= levelUp; i++) {
+                        for (var i = 1; i <= levelUp; i++) {
                               outlineList = outlineList.parentNode.parentNode;
                         }
                         outlineList.appendChild(listElem);
